@@ -1,0 +1,31 @@
+body{
+    background-color: #1d1d1d;
+}
+#carouselExampleInterval{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.portai_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#controll_buttons{
+    
+}
+#bal_oldal{
+    position: absolute;
+    display: block;
+    margin-top: 20%;
+}
+#oldal_text{
+    writing-mode: vertical-lr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+    margin-left: 0;
+}
