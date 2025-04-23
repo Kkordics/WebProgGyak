@@ -174,3 +174,69 @@ body{
     transform: scale(1.1);
     cursor: pointer;
 }
+.kosar{
+    width: 50%;
+    margin-left: 3%;
+    
+}
+.kosar li{
+    margin-bottom: 1%;
+}
+.kosar_sor_adat{
+    text-align: center;
+    display: block;
+    color: gray;
+   
+    font-size: 1.2rem;
+}
+
+.kosar_remove{
+    position: relative;
+    
+    margin-left: 90%;
+   
+}
+#right_line{
+    background-color: #525c63;
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    right: 0%;
+    top: 0%;
+}
+#right_number{
+    
+    color: rgba(255, 255, 255, 0.1);
+    right: 0%;
+    top: 10%;
+    font-size: 20rem;
+    position:absolute;
+}
+#rendeles{
+    position: absolute;
+    width: 40%;
+    right: 0%;
+    height: 80vh;
+    top: 15%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    overflow-y: scroll;
+
+}
+#purchase{
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 10%;
+    
+    margin-top: 20%;
+}
+#inputs{
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+    margin-top: 10%;
+}

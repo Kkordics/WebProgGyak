@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="hu-hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menü</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Termékek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Rólunk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Kosar.html">Kosár</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="text_ui">KOSÁR<h1 class="text_ui" style="color: #f1c40f; margin-left: 0%; padding-left: 0;">.</h1></h1>
+      <ul class="list-group kosar">
+        <li class="list-group-item">
+            <div class="row align-items-center">
+            <div class="col">
+                <img class="img-thumbnail" style="width: 80%;" src="Images/Black headphone.png" alt="..."> 
+            </div>
+            <div class="col">
+              <h3 class="kosar_sor_adat">Név</h3>
+            </div>
+            <div class="col">
+                <h3 class="kosar_sor_adat">Fekete bőr párna</h3>
+            </div>
+            <div class="col">
+                <div class="input-group"  style="width: 150px;">
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(-1)">-</button>
+                    <input type="number" class="form-control text-center" value="1" id="numberInput">
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(1)">+</button>
+                  </div>
+            </div>
+            <div class="col">
+                <h3 class="kosar_sor_adat">200 000ft</h3>
+            </div>
+            <div class="col">
+                <button type="button" class="btn-close kosar_remove" aria-label="Close"></button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+            <div class="row align-items-center">
+            <div class="col">
+                <img class="img-thumbnail" style="width: 80%;" src="Images/Black headphone.png" alt="..."> 
+            </div>
+            <div class="col">
+              <h3 class="kosar_sor_adat">Név</h3>
+            </div>
+            <div class="col">
+                <h3 class="kosar_sor_adat">Fekete bőr párna</h3>
+            </div>
+            <div class="col">
+                <div class="input-group kosar_darab"  style="width: 150px;">
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(-1)">-</button>
+                    <input type="number" class="form-control text-center" value="1" id="numberInput">
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(1)">+</button>
+                  </div>
+            </div>
+            <div class="col">
+                <h3 class="kosar_sor_adat">200 000ft</h3>
+            </div>
+            <div class="col">
+                <button type="button" class="btn-close kosar_remove" aria-label="Close"></button>
+            </div>
+          </div>
+        </li>
+       
+      </ul>
+      <aside id="bal2">
+        <h4 id="bal2_text" style="color: #f1c40f;">ONLY ON THIS WEBSITE</h4>
+      </aside>
+      <div id="right_line">
+        
+      </div>
+      <div id="rendeles">
+        <h1 id="right_number">01</h1>
+        <div id="inputs" >
+            <div class="form-floating mb-3">
+                <input  type="text" class="form-control" onchange="" id="rendeles_name" placeholder="Sándor">
+                <label for="rendeles_name">Név</label>
+            </div>
+            
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="rendeles_email" placeholder="name@example.com">
+                <label for="rendeles_email">Email cím</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="rendeles_city" placeholder="Kecskemét">
+                <label for="rendeles_city">Város</label>
+            </div>
+            <div class="form-floating mb-3">
+            <input type="number" maxlength="4" class="form-control" id="rendeles_zip" placeholder="6000">
+            <label for="rendeles_zip">Irányítószám</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="rendeles_address" placeholder="Kossuth 69">
+                <label for="rendeles_address">Cím</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="checkbox" style="display: inline-block;">
+                <label  style="display: inline-block;">Elfogadom a felhasználói feltételeket</label>
+            </div>
+        </div>
+        
+        <button id="purchase" onclick="purchase()">Rendelés</button>
+      </div>
+  </body>
+</html>
