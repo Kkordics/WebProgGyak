@@ -1,12 +1,14 @@
 body{
     background-color: #1d1d1d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #carouselExampleInterval{
-    width: 40%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
+    margin-top: -10%;
+    
 }
 .portai_img{
     display: block;
@@ -21,6 +23,26 @@ body{
     display: block;
     margin-top: 20%;
 }
+#bal2{
+    position: absolute;
+    display: block;
+    margin-top: -10%;
+}
+#jobb2{
+    position: absolute;
+    display: block;
+    margin-top: -10%;
+    right: 0;
+}
+#jobb2_text{
+    writing-mode: vertical-lr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-orientation: mixed;
+    
+    margin-right: 0;
+    font-size: 1rem;
+}
 #oldal_text{
     writing-mode: vertical-lr;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,4 +50,127 @@ body{
     text-orientation: mixed;
     transform: rotate(-180deg);
     margin-left: 0;
+    font-size: 4rem;
+}
+#bal2_text{
+    writing-mode: vertical-lr;
+    
+    color: white;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+    margin-left: 0;
+    font-size: 1rem;
+}
+.text_ui{
+    color: white;
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 7rem;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 0;
+    padding: 0;
+}
+#portai_circle{
+    
+    background-color: #6c5ce7;
+    position: absolute;
+   
+    height: 70%;
+    aspect-ratio: 1/1; 
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -30%);
+    z-index: -1; /* Behind everything */
+    
+}
+
+
+
+#cikszam{
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    top: 20%;
+    
+    border-right: none;
+    display: block;
+    width: fit-content;
+    width: 8%;
+    right: 0;
+}
+#cikszam p{
+    color: white;
+    text-align: center;
+    display: block;
+    margin-left: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+}
+#cikszam h3{
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20%;
+    margin-top: 0;
+    padding: 0;
+}
+.portai_container{
+    display: inline-block;
+    position: relative;
+    max-width: 30%;
+}
+.portai_header{
+    color: white;
+}
+.portai_text{
+    color: white;
+    font-display:block;
+    text-wrap: balance;
+}
+#portai_buy{
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #6c5ce7;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.slider_card{
+    position: relative;
+}
+.long_text{
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 600;
+    margin-top: 2%;
+}
+.table{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 5%;
+
+}
+.green_button{
+    background-color: #44bd32;
+}
+.kartyak{
+   width: 70%;
+   margin-left: 15%;
+}
+.kartya{
+    margin-left: 5%;
+    transition: 0.3s;
+}
+.kartya:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
 }
