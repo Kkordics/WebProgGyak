@@ -1,12 +1,5 @@
 function purchase(){
-    const name = document.getElementById("rendeles_name");
-    const email = document.getElementById("rendeles_email");
-    const city = document.getElementById("rendeles_city");
-    const zip = document.getElementById("rendeles_zip");
-    const address = document.getElementById("rendeles_address");
     
-    
-
     const inputs = document.getElementById("inputs").querySelectorAll(".form-control");
     let valid = false;
     
@@ -31,6 +24,17 @@ function valueValidation(input){
     if(input.type == "number"){
         
         if(input.value !== ""){
+            input.style.border = "none";
+            return false;
+        }else{
+            input.style.borderColor = "Red";
+            input.style.borderWidth = "2px";
+            return true;
+        }
+    
+    }else if (input.type == "email")
+    {   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(input.value !=="" && regex.test(input.value)){
             input.style.border = "none";
             return false;
         }else{
