@@ -31,7 +31,7 @@
                 <a class="nav-link active" aria-current="page" href="Kosar.html">Kosár</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="blog.html">Hírlap</a>
               </li>
             </ul>
             
@@ -47,16 +47,16 @@
                 <img class="img-thumbnail" style="width: 80%;" src="Images/Black headphone.png" alt="..."> 
             </div>
             <div class="col">
-              <h3 class="kosar_sor_adat">Név</h3>
+              <h3 class="kosar_sor_adat">Alpha</h3>
             </div>
             <div class="col">
                 <h3 class="kosar_sor_adat">Fekete bőr párna</h3>
             </div>
             <div class="col">
                 <div class="input-group"  style="width: 150px;">
-                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(-1)">-</button>
-                    <input type="number" class="form-control text-center" value="1" id="numberInput">
-                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(1)">+</button>
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(this,-1)">-</button>
+                    <input type="number" class="form-control text-center" min="0" max="10" value="1" id="numberInput">
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(this, 1)">+</button>
                   </div>
             </div>
             <div class="col">
@@ -73,16 +73,16 @@
                 <img class="img-thumbnail" style="width: 80%;" src="Images/white headphones.png" alt="..."> 
             </div>
             <div class="col">
-              <h3 class="kosar_sor_adat">Név</h3>
+              <h3 class="kosar_sor_adat">Charlie</h3>
             </div>
             <div class="col">
                 <h3 class="kosar_sor_adat">Fekete bőr párna</h3>
             </div>
             <div class="col">
                 <div class="input-group kosar_darab"  style="width: 150px;">
-                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(-1)">-</button>
-                    <input type="number" class="form-control text-center" value="1" id="numberInput">
-                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(1)">+</button>
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(this,-1)">-</button>
+                    <input type="number" class="form-control text-center" min="0" max="10" value="1" id="numberInput">
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(this,1)">+</button>
                   </div>
             </div>
             <div class="col">
@@ -99,16 +99,16 @@
                 <img class="img-thumbnail" style="width: 80%;" src="Images/Black2 headphone.png" alt="..."> 
             </div>
             <div class="col">
-              <h3 class="kosar_sor_adat">Név</h3>
+              <h3 class="kosar_sor_adat">Bravo</h3>
             </div>
             <div class="col">
                 <h3 class="kosar_sor_adat">Fekete bőr párna</h3>
             </div>
             <div class="col">
                 <div class="input-group kosar_darab"  style="width: 150px;">
-                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(-1)">-</button>
-                    <input type="number" class="form-control text-center" value="1" id="numberInput">
-                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(1)">+</button>
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(this,-1)">-</button>
+                    <input type="number" class="form-control text-center" min="0" max="10" value="1" id="numberInput">
+                    <button class="btn btn-outline-secondary" type="button" onclick="changeValue(this,1)">+</button>
                   </div>
             </div>
             <div class="col">
@@ -130,7 +130,7 @@
         <h1 id="right_number">01</h1>
         <div id="inputs" >
             <div class="form-floating mb-3">
-                <input  type="text" class="form-control" onchange="" id="rendeles_name" placeholder="Sándor">
+                <input  type="text" class="form-control" id="rendeles_name" placeholder="Sándor">
                 <label for="rendeles_name">Név</label>
             </div>
             

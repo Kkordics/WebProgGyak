@@ -348,12 +348,42 @@ body{
     box-shadow: 20px 15px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
-#middlePage_title{
+.middlePage_title{
     color: white;
     font-size: 4rem;
+    margin-left: 1%;
 }
 #about_map{
     border-color: white;
     border-width: 3px;
     border-style: solid;
 }
+#middlePage_text{
+    color: white;
+    width: 30%;
+    display: inline-block;
+    margin-left: 10%;
+    font-size: 1.2rem;
+}
+.nagy-Kartya{
+    background-image: url("https://images.pexels.com/photos/3184638/pexels-photo-3184638.jpeg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.card{
+    transition: 0.3s;
+}
+.card:hover{
+    transition: 0.3s;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+#loading{
+    color: white;
+    text-align: center;
+    
+    
+   
+}
+  

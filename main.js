@@ -1,35 +1,71 @@
 function purchase(){
-   const name = document.getElementById("rendeles_name");
-   const email = document.getElementById("rendeles_email");
-   const city = document.getElementById("rendeles_city");
-   const zip = document.getElementById("rendeles_zip");
-   const address = document.getElementById("rendeles_address");
-   
-    const inputs = document.querySelectorAll(".form-control");
+    const name = document.getElementById("rendeles_name");
+    const email = document.getElementById("rendeles_email");
+    const city = document.getElementById("rendeles_city");
+    const zip = document.getElementById("rendeles_zip");
+    const address = document.getElementById("rendeles_address");
+    
+    
+
+    const inputs = document.getElementById("inputs").querySelectorAll(".form-control");
     let valid = false;
-   inputs.forEach(input => {
-    if(input.value == ""){
-        
+    
+    inputs.forEach(input => {
+    
         
         if(valueValidation(input)){
             valid = true;
         }
-       }
+        
    });
 
-
+   
    if(valid == false){
     alert("Rendelés leadva!");
-    document.open("index.html");
+    window.open("/index.html", "_self");
    }
 }
 function valueValidation(input){
-    if(input.value !=""){
-        input.style.border = "none";
-        return false;
+    
+    
+    if(input.type == "number"){
+        
+        if(input.value !== ""){
+            input.style.border = "none";
+            return false;
+        }else{
+            input.style.borderColor = "Red";
+            input.style.borderWidth = "2px";
+            return true;
+        }
     }else{
-        input.style.borderColor = "Red";
-        input.style.borderWidth = "2px";
-        return true;
+        if(input.value !=="" && input.value.length >10){
+            input.style.border = "none";
+            return false;
+        }else{
+            input.style.borderColor = "Red";
+            input.style.borderWidth = "2px";
+            return true;
+        }
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    
+    if (window.location.pathname.includes("blog.html")) {
+        
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("kartyak").style.display = "block";
+    }
+});
+
+function changeValue(fire, value){
+    
+    if(parseInt(fire.parentNode.querySelector("input").value) <10 && value==1){
+        fire.parentNode.querySelector("input").value = parseInt(fire.parentNode.querySelector("input").value )+ value;
+    }
+    if(parseInt(fire.parentNode.querySelector("input").value) >1 && value==-1){
+        fire.parentNode.querySelector("input").value = parseInt(fire.parentNode.querySelector("input").value )+ value;
     }
 }
